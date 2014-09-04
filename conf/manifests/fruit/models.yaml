@@ -1,0 +1,11 @@
+apple:
+  displayname: Apple
+  identifier: "apple"
+  properties:
+    - name
+
+pineapple:
+  displayname: Pine Apple
+  identifier: "pineapple"
+  properties:
+    - name

@@ -1,0 +1,25 @@
+hostname:
+  type.string:
+    - match: ".cn[0-9]"
+    - min: 4
+    - unique
+    - not_null
+
+rackname:
+  type.string:
+    - min: 4
+    - not_null
+
+sitename:
+  type.string:
+    - min: 4
+    - not_null
+
+price:
+  type.float:
+    - min: 0.0
+
+height:
+  type.int:
+    - min: 0
+    - max: 4

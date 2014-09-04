@@ -1,0 +1,6 @@
+[server]
+listen = "0.0.0.0:8000"
+
+[database]
+dialect = "postgres"
+connection = "user=postgres password=postgres dbname=test host=dev1 sslmode=disable"

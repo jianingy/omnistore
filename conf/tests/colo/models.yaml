@@ -1,0 +1,23 @@
+site:
+  displayname: Site
+  identifier: '{{ .sitename }}'
+  properties:
+    - sitename
+
+rack:
+  displayname: rack
+  identifier: "{{ .rackname }}"
+  properties:
+    - rackname
+  references:
+    - site: site
+
+rackserver:
+  displayname: Rack Server
+  identifier: "{{ .hostname }}"
+  properties:
+    - hostname
+    - height
+    - price
+  references:
+    - rack: rack
